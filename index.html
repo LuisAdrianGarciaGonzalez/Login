@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<link rel="stylesheet" href="master.css">
+</head>
+<body>
+    <form action="index.html" class="form-box">
+        <img src="logo2.png" class="avatar" alt="Avatar Image">
+        <h1 class="form-title">Iniciar sesion</h1>
+            
+        <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+		<input type="password" name="pass" id="pass" placeholder="Contraseña">
+		<input type="button" onclick="validar()" value="verificar"> 
+    </form>
+</body>
+<script type="text/javascript">
+    function validar()
+    {
+        var usuario = document.getElementById("usuario").value;
+        var Contraseña = document.getElementById("pass").value;	
+
+        if(usuario == "Luis" && Contraseña == "1234")
+        {
+            alert("Usuario y Contraseña validos");
+        }
+        else
+        {
+            alert("Verifique sus credenciales");
+        }
+    }
+</script>
+</html>
